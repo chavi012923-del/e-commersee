@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive | All Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-car-front me-2"></i>AutoDrive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill me-2"></i>Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"><i class="bi bi-tags-fill me-2"></i>Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="category1.html">Toyota</a></li>
+                            <li><a class="dropdown-item" href="category2.html">Ford</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle-fill me-2"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill me-2"></i>Contact</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="cart.html" class="btn btn-outline-light me-2">
+                        <i class="bi bi-cart-fill me-2"></i>Cart (<span id="cart-count">0</span>)
+                    </a>
+                    <a href="login.html" class="btn btn-success me-2"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a>
+                    <a href="register.html" class="btn btn-outline-success"><i class="bi bi-person-plus-fill me-2"></i>Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <h1 class="text-center mb-5">All Our Vehicles</h1>
+        <h2 class="mb-4" style="border-bottom: 2px solid var(--brand-color);">Toyota</h2>
+        <div class="row">
+            <!-- Toyota vehicles -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota Fortuner.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Fortuner</h5>
+                        <p class="card-text">A body-on-frame, three-row SUV combining passenger space with the utility of a ladder-frame vehicle.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱559,990</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Fortuner"
+                                data-price="559990"
+                                data-image="images/Toyota Fortuner.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota Hilux.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Hilux</h5>
+                        <p class="card-text">A midsize pickup with a separate cargo bed, built for utility. Configurations vary by market and model year.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱495,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Hilux"
+                                data-price="495000"
+                                data-image="images/Toyota Hilux.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota vios.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Vios</h5>
+                        <p class="card-text">A subcompact four-door sedan for everyday use. Engine and equipment vary by model year and local trim.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱345,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Vios"
+                                data-price="345000"
+                                data-image="images/Toyota vios.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota maxus.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Maxus T60</h5>
+                        <p class="card-text">A midsize pickup from Maxus with a separate cargo bed for work and everyday hauling.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱290,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Maxus T60"
+                                data-price="290000"
+                                data-image="images/Toyota maxus.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More Toyota vehicles -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota Raize.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Raize</h5>
+                        <p class="card-text">A small crossover SUV with a raised driving position and compact dimensions suited to urban driving.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱315,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Raize"
+                                data-price="315000"
+                                data-image="images/Toyota Raize.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota veloz.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Veloz</h5>
+                        <p class="card-text">A three-row MPV with a flexible cabin for family passengers and luggage.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱199,990</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Veloz"
+                                data-price="199990"
+                                data-image="images/Toyota veloz.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Toyota vios.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Vios</h5>
+                        <p class="card-text">A subcompact four-door sedan for everyday use. Engine and equipment vary by model year and local trim.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱275,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Vios"
+                                data-price="275000"
+                                data-image="images/Toyota vios.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/toyota-avanza.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Avanza</h5>
+                        <p class="card-text">A compact three-row MPV designed to carry a family, with a cabin that can be reconfigured for passengers or luggage.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱155,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Avanza"
+                                data-price="155000"
+                                data-image="images/toyota-avanza.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Toyota vehicles -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/toyota-innova.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Toyota Innova</h5>
+                        <p class="card-text">A family-focused MPV with three-row seating. Body style and powertrain depend on the model generation and market.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱295,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Toyota Innova"
+                                data-price="295000"
+                                data-image="images/toyota-innova.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford everest active.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest Active</h5>
+                        <p class="card-text">An Everest grade with a three-row SUV layout. Equipment and availability depend on model year and market.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱230,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest Active"
+                                data-price="230000"
+                                data-image="images/Ford everest active.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="my-4" style="border-bottom: 2px solid var(--accent-red);">Ford</h2>
+        <div class="row">
+            <!-- Ford vehicles -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford Titanuim+.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest Titanium+</h5>
+                        <p class="card-text">A higher-grade version of Ford's three-row Everest SUV. Exact equipment varies by model year and market.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱559,990</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest Titanium+"
+                                data-price="559990"
+                                data-image="images/Ford Titanuim+.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford Titanuim x.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest Titanium</h5>
+                        <p class="card-text">This listing represents an Everest in Titanium trim. Check its model year and local specification for exact equipment.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱470,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest Titanium"
+                                data-price="470000"
+                                data-image="images/Ford Titanuim x.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford territorry.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Territory</h5>
+                        <p class="card-text">A crossover SUV with a car-based platform and a cabin designed for everyday passenger use.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱570,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Territory"
+                                data-price="570000"
+                                data-image="images/Ford territorry.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford everest.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest</h5>
+                        <p class="card-text">A midsize, three-row SUV based on a pickup platform, designed for passenger and general-purpose use.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱285,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest"
+                                data-price="285000"
+                                data-image="images/Ford everest.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More Ford vehicles -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford everest Wildtrak.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest Wildtrak</h5>
+                        <p class="card-text">An Everest grade with Wildtrak styling and equipment; exact features vary by market and model year.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱199,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest Wildtrak"
+                                data-price="199000"
+                                data-image="images/Ford everest Wildtrak.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford everest sport+.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest Sport+</h5>
+                        <p class="card-text">The Sport grade adds distinct styling to the Everest's three-row SUV layout; equipment varies by market and year.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱720,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest Sport+"
+                                data-price="720000"
+                                data-image="images/Ford everest sport+.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford everest platinum.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Everest Platinum</h5>
+                        <p class="card-text">A premium Everest grade with upscale trim. Available features vary by market and model year.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱155,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Everest Platinum"
+                                data-price="155000"
+                                data-image="images/Ford everest platinum.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford Wild Trak.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Ranger Wildtrak</h5>
+                        <p class="card-text">A Ranger pickup grade with distinctive Wildtrak styling, intended for both everyday driving and utility.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱99,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Ranger Wildtrak"
+                                data-price="99000"
+                                data-image="images/Ford Wild Trak.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Ford vehicles -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford wild trak X.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Ranger Wildtrak X</h5>
+                        <p class="card-text">An off-road-oriented Ranger Wildtrak grade. Equipment and availability vary by market and model year.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱350,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Ranger Wildtrak X"
+                                data-price="350000"
+                                data-image="images/Ford wild trak X.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 product-card">
+                    <img src="images/Ford raptor.webp" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Ford Ranger Raptor</h5>
+                        <p class="card-text">A performance-oriented Ranger pickup engineered for high-speed off-road driving; exact specifications vary by market and year.</p>
+                        <h6 class="card-subtitle mt-auto mb-2 text-muted">₱260,000</h6>
+                        <div class="">
+                            <button class="btn btn-success add-to-cart-btn"
+                                data-name="Ford Ranger Raptor"
+                                data-price="4999"
+                                data-image="images/Ford raptor.webp"
+                            >Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><div class="container text-center"><span>&copy; 2025 AutoDrive. All Rights Reserved.</span></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    function getCart() {
+        return JSON.parse(localStorage.getItem('cartItems') || '[]');
+    }
+    function setCart(cart) {
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+        document.getElementById('cart-count').textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        setCart(getCart());
+        document.querySelectorAll('.add-to-cart-btn').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const name = btn.getAttribute('data-name');
+                const price = parseFloat(btn.getAttribute('data-price'));
+                const image = btn.getAttribute('data-image');
+                let cart = getCart();
+                let found = cart.find(item => item.name === name);
+                if (found) {
+                    found.qty += 1;
+                } else {
+                    cart.push({ name, price, image, qty: 1 });
+                }
+                setCart(cart);
+                btn.textContent = "Added!";
+                btn.disabled = true;
+                setTimeout(() => {
+                    btn.textContent = "Add to Cart";
+                    btn.disabled = false;
+                }, 1000);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

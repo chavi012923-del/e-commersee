@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive| Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar with Icons -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+           <i class="bi bi-car-front me-2"></i>AutoDrive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <i class="bi bi-house-door-fill me-2"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-tags-fill me-2"></i>Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="category1.html">Toyota</a></li>
+                            <li><a class="dropdown-item" href="category2.html">Ford</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle-fill me-2"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope-fill me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="cart.html" class="btn btn-outline-light me-2">
+                        <i class="bi bi-cart-fill me-2"></i>Cart (0)
+                    </a>
+                    <a href="login.html" class="btn btn-success me-2">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                    </a>
+                    <a href="register.html" class="btn btn-outline-success">
+                        <i class="bi bi-person-plus-fill me-2"></i>Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content (no changes here) -->
+    <main>
+        <!-- Hero Carousel -->
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+           
+<div class="carousel-inner">
+
+    <!-- Toyota Slide -->
+    <div class="carousel-item active"
+         style="background-image: url('https://images.unsplash.com/photo-1599033488252-789a056d6f51?q=80&w=2070&auto=format&fit=crop')">
+
+        <video class="hero-video" autoplay muted loop playsinline
+               aria-hidden="true" tabindex="-1">
+            <source src="https://videos.pexels.com/video-files/40304906/17217435_1920_1080_60fps.mp4"
+                    type="video/mp4">
+        </video>
+
+        <div class="carousel-caption d-none d-md-block p-4">
+            <h5>Find Your Next Toyota</h5>
+            <p>Browse practical cars, crossovers, SUVs, and pickups for everyday driving.</p>
+            <a href="category1.html" class="btn btn-success">
+                Shop Toyota
+            </a>
+        </div>
+    </div>
+
+    <!-- Ford Advertisement Video Slide -->
+    <div class="carousel-item"
+         style="background-image: url('https://images.unsplash.com/photo-1621871224388-75b1d03473f3?q=80&w=2070&auto=format&fit=crop')">
+
+        <video class="hero-video" autoplay muted loop playsinline
+               aria-hidden="true" tabindex="-1">
+            <source src="https://videos.pexels.com/video-files/16017126/16017126-hd_1920_1080_60fps.mp4"
+                    type="video/mp4">
+        </video>
+
+        <div class="carousel-caption d-none d-md-block p-4">
+            <h5>Built Ford Tough</h5>
+            <p>Discover bold performance, rugged pickups, and versatile SUVs designed for the road ahead.</p>
+            <a href="category2.html" class="btn btn-success">
+                Explore Ford
+            </a>
+        </div>
+    </div>
+
+</div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4">Welcome to AutoDrive</h1>
+        <p class="lead">Browse Toyota and Ford vehicles for daily travel, work, and family trips.</p>
+        <a href="products.html" class="btn btn-success btn-lg">
+          <i class="bi bi-box-seam"></i> Shop Now
+        </a>
+      </div>
+      <div class="col-md-6">
+        <img src="images/Logo (2).png" class="img-fluid rounded" alt="AutoDrive vehicles">
+      </div>
+    </div>
+  </div>
+  <!-- Carousel -->
+  <div class="container mt-5">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Toyota Logo.jpg" class="d-block w-100" alt="Toyota">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Toyota Vehicles</h5>
+            <p>Explore Toyota cars and utility vehicles.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Ford Logo.jpg" class="d-block w-100" alt="Ford">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ford Vehicles</h5>
+            <p>Browse Ford SUVs and pickups.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+        <!-- Featured Products -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="images/Toyota vios.webp" class="card-img-top" alt="Toyota Vios">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Vios</h5>
+                            <p class="card-text">A subcompact four-door sedan for everyday use. Engine, transmission, and equipment depend on the Vios model year and local trim.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">₱559,990<</h6>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="images/Ford territorry.webp" class="card-img-top" alt="Ford Territory">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Territory</h5>
+                            <p class="card-text">A compact crossover SUV with a spacious cabin and a car-based platform. Available engines and equipment depend on market and model year.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">₱470,000</h6>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="images/Toyota Wigo.webp" class="card-img-top" alt="Toyota Wigo">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Wigo</h5>
+                            <p class="card-text">The Toyota Wigo is a compact and fuel-efficient car, perfect for city driving.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">₱345,000</h6>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-outline-dark btn-lg">View All Products</a>
+            </div>
+        </div>
+    </main>
+    <section>
+    <h1 class="text-center">Gallery</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex justifiy-content-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S8IyI9VuEkk?si=LOj-8vMNNdNqKsd3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 d-flex justifiy-content-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rBJLymiC4Zc?si=S6QFZhZSHbBHJrLD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <span>&copy; 2025 AutoDrive. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
